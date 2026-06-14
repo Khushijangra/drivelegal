@@ -11,7 +11,8 @@
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16%2BPostGIS-316192?style=flat-square&logo=postgresql&logoColor=white)](https://postgresql.org)
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
 [![Docker](https://img.shields.io/badge/Docker-Compose-2CA5E0?style=flat-square&logo=docker&logoColor=white)](https://docker.com)
-[![Vitest](https://img.shields.io/badge/Tests-22%20passing-6E9F18?style=flat-square&logo=vitest&logoColor=white)](backend/tests/)
+[![Vitest](https://img.shields.io/badge/Tests-35%20passing-6E9F18?style=flat-square&logo=vitest&logoColor=white)](backend/tests/)
+[![Release](https://img.shields.io/badge/Release-v1.0.0-blue?style=flat-square&logo=github)](https://github.com/Khushijangra/drivelegal/releases/tag/v1.0.0)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 [![IIT Madras](https://img.shields.io/badge/IIT%20Madras-Road%20Safety%20Hackathon-orange?style=flat-square)](https://www.iitm.ac.in)
 
@@ -498,17 +499,15 @@ curl -X POST http://localhost:4000/api/vision/analyze \
 </table>
 
 
-> 🎬 **[▶ Watch Full Demo Video](https://youtu.be/REPLACE_WITH_YOUR_YOUTUBE_LINK)** — Complete walkthrough: NL query → jurisdiction resolution → evidence bundle → challan PDF
+> 🎬 **[▶ Watch Demo Video](https://github.com/Khushijangra/drivelegal/releases/tag/v1.0.0)** — Complete walkthrough: NL query → jurisdiction resolution → evidence bundle → challan PDF
 
 <div align="center">
-<a href="https://youtu.be/REPLACE_WITH_YOUR_YOUTUBE_LINK">
+<a href="https://github.com/Khushijangra/drivelegal/releases/tag/v1.0.0">
   <img src="docs/screenshots/demo-thumbnail.png" alt="DriveLegal Demo Video" width="700" />
 </a>
 <br/>
-<em>Click to watch the 2-minute demo on YouTube</em>
+<em>Click to download the demo video from GitHub Releases</em>
 </div>
-
-> **To add your demo video:** Upload `docs/demo/demo.mp4` to YouTube → paste the link above (replace `REPLACE_WITH_YOUR_YOUTUBE_LINK`)
 
 
 
