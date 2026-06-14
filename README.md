@@ -653,10 +653,21 @@ This project is licensed under the MIT License — see [LICENSE](LICENSE) for de
 
 ## 👨‍💻 Author
 
-**Your Name** — B.Tech [Branch], [College Name]
+**Khushi Jangra** — IIT Madras
 
-[![GitHub](https://img.shields.io/badge/GitHub-@YOUR_USERNAME-181717?style=flat-square&logo=github)](https://github.com/YOUR_USERNAME)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-your--name-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/YOUR_PROFILE)
+[![GitHub](https://img.shields.io/badge/GitHub-@Khushijangra-181717?style=flat-square&logo=github)](https://github.com/Khushijangra)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Khushi%20Jangra-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/khushijangra)
+
+*Built for the IIT Madras Road Safety Hackathon — 2024*
+
+---
+
+<div align="center">
+
+**⭐ If this project was useful or impressive, please star the repository**
+
+</div>
+
 
 *Built for the IIT Madras Road Safety Hackathon — 2024*
 
