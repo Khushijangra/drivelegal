@@ -1,0 +1,17 @@
+{
+  "downloadedAt": "2026-06-02T10:57:03.653Z",
+  "results": [
+    {
+      "id": "gadm41_IND_1",
+      "status": "ok",
+      "features": 41,
+      "sizeBytes": 1595240
+    },
+    {
+      "id": "gadm41_IND_2",
+      "status": "ok",
+      "features": 676,
+      "sizeBytes": 5118236
+    }
+  ]
+}

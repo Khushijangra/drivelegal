@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-06-02T09:54:42.815Z",
+  "totalRulesExtracted": 0,
+  "byStrategy": {
+    "section-fine": 0,
+    "table-row": 0,
+    "fine-mention": 0
+  },
+  "averageConfidence": 0,
+  "rules": []
+}

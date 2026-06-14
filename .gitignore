@@ -1,0 +1,110 @@
+# ============================================================
+# DriveLegal — .gitignore
+# ============================================================
+
+# ── Environment & Secrets ───────────────────────────────────
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+backend/.env
+frontend/.env
+
+# ── Sensitive & Proprietary Files ──────────────────────────
+# Internal dev notes / hackathon submission artifacts
+1.md
+2.md
+vision_evidence_output.md
+PROJECT_STATUS.md
+DriveLegal_Submission.zip
+DriveLegal_Detailed_Document.docx
+submission_temp/
+generate-doc.mjs
+
+# Internal audit and eval artifacts
+backend/PHASE10_VERIFICATION_AUDIT.md
+backend/data/phase8-eval-metrics.txt
+backend/data/phase9-audit.txt
+backend/data/test-metrics.txt
+AUDIT_SCORECARD.md
+
+# Internal infrastructure configs
+infra/
+
+# NOTE: All source code (including rag.ts, vision.ts, all services) is intentionally
+# PUBLIC. Recruiters should be able to verify the technical depth directly.
+# Only secrets, credentials, raw data, and internal notes are excluded.
+
+# ── Node.js ─────────────────────────────────────────────────
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# ── Build Outputs ───────────────────────────────────────────
+dist/
+backend/dist/
+frontend/dist/
+*.js.map
+*.d.ts.map
+
+# ── TypeScript Build Info ───────────────────────────────────
+*.tsbuildinfo
+frontend/tsconfig.tsbuildinfo
+frontend/tsconfig.node.tsbuildinfo
+
+# ── Data & ML Models (large binary / restricted files) ──────
+backend/data/raw/
+backend/data/tmp/
+backend/data/models/
+backend/data/benchmark/
+backend/data/vector.index.json
+backend/data/rules.vector.index.json
+backend/eng.traineddata
+
+# ── Database & Corpus Exports ───────────────────────────────
+*.sql.gz
+*.dump
+*.backup
+
+# ── Logs ────────────────────────────────────────────────────
+*.log
+logs/
+backend/logs/
+
+# ── Upload Directories ──────────────────────────────────────
+backend/uploads/
+public/uploads/
+
+# ── OS & Editor ─────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+Thumbs.db
+.vscode/settings.json
+.vscode/*.code-workspace
+.idea/
+
+# ── Testing & Coverage ──────────────────────────────────────
+coverage/
+.vitest-cache/
+
+# ── Turbo ───────────────────────────────────────────────────
+.turbo/
+.cache/
+
+# ── Misc ────────────────────────────────────────────────────
+*.zip
+*.tar.gz
+*.docx
+*.pdf
+!docs/**/*.pdf
+
+# ── Large Demo Assets (use YouTube / Google Drive link in README) ─
+# Videos are too large for GitHub without Git LFS.
+# Place the demo link in README.md instead.
+docs/demo/*.mp4
+docs/demo/*.mov
+docs/demo/*.webm
+docs/demo/*.mkv
+# GIFs under 10MB ARE fine to commit:
+# docs/demo/*.gif — do NOT exclude these

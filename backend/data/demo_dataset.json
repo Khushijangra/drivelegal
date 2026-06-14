@@ -1,0 +1,64 @@
+{
+  "queries": [
+    {
+      "query": "fine for not wearing protective headgear",
+      "expectedRule": "DL-113",
+      "expectedFine": 1000,
+      "jurisdiction": "Delhi"
+    },
+    {
+      "query": "drunk driving challan",
+      "expectedRule": "MV185",
+      "expectedFine": 10000,
+      "jurisdiction": "Central"
+    },
+    {
+      "query": "triple riding on scooty",
+      "expectedRule": "DL-115",
+      "expectedFine": 1000,
+      "jurisdiction": "Delhi"
+    },
+    {
+      "query": "driving commercial taxi without badge",
+      "expectedRule": "DL-138",
+      "expectedFine": 500,
+      "jurisdiction": "Delhi"
+    },
+    {
+      "query": "parked in tow away zone",
+      "expectedRule": "DL-124",
+      "expectedFine": 500,
+      "jurisdiction": "Delhi"
+    },
+    {
+      "query": "without seat belt penalty",
+      "expectedRule": "DL-112",
+      "expectedFine": 1000,
+      "jurisdiction": "Delhi"
+    },
+    {
+      "query": "texting while driving phone fine",
+      "expectedRule": "DL-119",
+      "expectedFine": 1000,
+      "jurisdiction": "Delhi"
+    },
+    {
+      "query": "running a red light",
+      "expectedRule": "MV194F",
+      "expectedFine": 1000,
+      "jurisdiction": "Central"
+    },
+    {
+      "query": "loud modified blast silencer",
+      "expectedRule": "DL-131",
+      "expectedFine": 10000,
+      "jurisdiction": "Delhi"
+    },
+    {
+      "query": "no puc certificate",
+      "expectedRule": "DL-109",
+      "expectedFine": 10000,
+      "jurisdiction": "Delhi"
+    }
+  ]
+}
