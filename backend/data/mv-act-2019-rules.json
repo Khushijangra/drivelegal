@@ -1,0 +1,367 @@
+/**
+ * mv-act-2019-rules.json
+ *
+ * Authoritative seed dataset: Motor Vehicles (Amendment) Act 2019 challan rules.
+ *
+ * Source:
+ *   Organization:     Ministry of Road Transport and Highways (MoRTH)
+ *   Act:              The Motor Vehicles (Amendment) Act, 2019
+ *   Gazette Ref:      No. 39 of 2019, notified 9 August 2019
+ *   Effective Date:   2019-09-01 (most provisions)
+ *   Source URL:       https://morth.gov.in/motor-vehicles-amendment-act-2019
+ *   eGazette URL:     https://egazette.nic.in/WriteReadData/2019/210089.pdf
+ *   Reliability:      VERY HIGH — primary legislation
+ *   Update Frequency: Ad hoc (requires Parliamentary amendment to change)
+ *   Why Used:         Sole authoritative source for national challan fine amounts.
+ *                     State-level surcharges stack on top of these national minima.
+ *
+ * Schema mapping:
+ *   Each entry maps to `rules` table columns:
+ *     offense_code, description, state_code ('*' = national),
+ *     vehicle_class ('*' = all), base_fine, compounding_fine,
+ *     demerit_points, source_clause, effective_date
+ */
+[
+  {
+    "_meta": {
+      "dataset": "Motor Vehicles (Amendment) Act 2019 — National Fine Schedule",
+      "sourceOrganization": "Ministry of Road Transport and Highways",
+      "sourceUrl": "https://morth.gov.in/motor-vehicles-amendment-act-2019",
+      "egazetteUrl": "https://egazette.nic.in/WriteReadData/2019/210089.pdf",
+      "gazetteNotificationNo": "No. 39 of 2019",
+      "effectiveDate": "2019-09-01",
+      "reliability": "very-high",
+      "notes": "Fines are national minimums. States may levy additional surcharges."
+    }
+  },
+  {
+    "offense_code": "MV177",
+    "description": "General violation of any provision of the Motor Vehicles Act or rules made thereunder (not covered elsewhere)",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 500,
+    "compounding_fine": 0,
+    "demerit_points": 0,
+    "source_clause": "Section 177, Motor Vehicles Act 1988 as amended by MVA 2019",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 177"
+  },
+  {
+    "offense_code": "MV177A",
+    "description": "Road rage — physical assault, obstruction, intimidation of other road user",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 1000,
+    "compounding_fine": 2000,
+    "demerit_points": 2,
+    "source_clause": "Section 177A, Motor Vehicles Act 1988 (inserted by MVA 2019)",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 177A"
+  },
+  {
+    "offense_code": "MV178",
+    "description": "Travelling without ticket (if applicable) / obstruction to traffic",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 500,
+    "compounding_fine": 0,
+    "demerit_points": 0,
+    "source_clause": "Section 178, Motor Vehicles Act 1988",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 178"
+  },
+  {
+    "offense_code": "MV179",
+    "description": "Disobeying orders of authorities — failure to comply with directions of a police officer",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 2000,
+    "compounding_fine": 0,
+    "demerit_points": 1,
+    "source_clause": "Section 179, Motor Vehicles Act 1988 as amended by MVA 2019",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 179"
+  },
+  {
+    "offense_code": "MV180",
+    "description": "Allowing unauthorised person to drive a motor vehicle",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 5000,
+    "compounding_fine": 0,
+    "demerit_points": 3,
+    "source_clause": "Section 180, Motor Vehicles Act 1988 as amended by MVA 2019",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 180"
+  },
+  {
+    "offense_code": "MV181",
+    "description": "Driving without a valid licence",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 5000,
+    "compounding_fine": 0,
+    "demerit_points": 0,
+    "source_clause": "Section 181, Motor Vehicles Act 1988 as amended by MVA 2019",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 181"
+  },
+  {
+    "offense_code": "MV182",
+    "description": "Driving while disqualified from holding a driving licence",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 10000,
+    "compounding_fine": 0,
+    "demerit_points": 5,
+    "source_clause": "Section 182, Motor Vehicles Act 1988 as amended by MVA 2019",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 182"
+  },
+  {
+    "offense_code": "MV182A",
+    "description": "Driving without a valid registration certificate",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 5000,
+    "compounding_fine": 10000,
+    "demerit_points": 0,
+    "source_clause": "Section 182A, Motor Vehicles Act 1988 (inserted by MVA 2019)",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 182A"
+  },
+  {
+    "offense_code": "MV182B",
+    "description": "Driving a vehicle not compliant with environmental standards (emission norms)",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 10000,
+    "compounding_fine": 0,
+    "demerit_points": 0,
+    "source_clause": "Section 182B, Motor Vehicles Act 1988 (inserted by MVA 2019)",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 182B"
+  },
+  {
+    "offense_code": "MV183_A",
+    "description": "Exceeding speed limit — light motor vehicle (car, jeep, taxi)",
+    "state_code": "*",
+    "vehicle_class": "LMV",
+    "base_fine": 1000,
+    "compounding_fine": 2000,
+    "demerit_points": 2,
+    "source_clause": "Section 183(1), Motor Vehicles Act 1988 as amended by MVA 2019",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 183"
+  },
+  {
+    "offense_code": "MV183_B",
+    "description": "Exceeding speed limit — medium/heavy goods or passenger vehicle",
+    "state_code": "*",
+    "vehicle_class": "HMV",
+    "base_fine": 2000,
+    "compounding_fine": 4000,
+    "demerit_points": 3,
+    "source_clause": "Section 183(1), Motor Vehicles Act 1988 as amended by MVA 2019",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 183"
+  },
+  {
+    "offense_code": "MV184",
+    "description": "Dangerous driving — driving in a manner dangerous to the public",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 5000,
+    "compounding_fine": 10000,
+    "demerit_points": 5,
+    "source_clause": "Section 184, Motor Vehicles Act 1988 as amended by MVA 2019",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 184"
+  },
+  {
+    "offense_code": "MV185",
+    "description": "Driving under influence of alcohol or drugs (DUI/DWI) — first offence",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 10000,
+    "compounding_fine": 0,
+    "demerit_points": 8,
+    "source_clause": "Section 185, Motor Vehicles Act 1988 as amended by MVA 2019",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 185",
+    "notes": "Also carries up to 6 months imprisonment on first offence. BAC limit: 30 mg per 100 ml blood."
+  },
+  {
+    "offense_code": "MV185_R",
+    "description": "Driving under influence of alcohol or drugs — repeat offence (within 3 years)",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 15000,
+    "compounding_fine": 0,
+    "demerit_points": 10,
+    "source_clause": "Section 185(2), Motor Vehicles Act 1988 as amended by MVA 2019",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 185",
+    "notes": "Also carries up to 2 years imprisonment for repeat offence."
+  },
+  {
+    "offense_code": "MV189",
+    "description": "Racing on public roads — participation in unauthorised racing or trials of speed",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 5000,
+    "compounding_fine": 0,
+    "demerit_points": 5,
+    "source_clause": "Section 189, Motor Vehicles Act 1988 as amended by MVA 2019",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 189"
+  },
+  {
+    "offense_code": "MV192",
+    "description": "Using a vehicle without insurance — driving without valid third-party insurance",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 2000,
+    "compounding_fine": 4000,
+    "demerit_points": 0,
+    "source_clause": "Section 192(1), Motor Vehicles Act 1988 as amended by MVA 2019",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 192"
+  },
+  {
+    "offense_code": "MV192A",
+    "description": "Aggregator not having licence / operating vehicles without licence",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 25000,
+    "compounding_fine": 100000,
+    "demerit_points": 0,
+    "source_clause": "Section 192A, Motor Vehicles Act 1988 (inserted by MVA 2019)",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 192A"
+  },
+  {
+    "offense_code": "MV193",
+    "description": "Overloading of vehicles — weight exceeds permissible limit",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 20000,
+    "compounding_fine": 0,
+    "demerit_points": 2,
+    "source_clause": "Section 194, Motor Vehicles Act 1988 as amended by MVA 2019",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 194",
+    "notes": "Additional Rs.2000 per tonne of excess weight."
+  },
+  {
+    "offense_code": "MV194A",
+    "description": "Overloading of passengers in a vehicle",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 1000,
+    "compounding_fine": 0,
+    "demerit_points": 1,
+    "source_clause": "Section 194A, Motor Vehicles Act 1988 (inserted by MVA 2019)",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 194A",
+    "notes": "Rs.1000 per extra passenger."
+  },
+  {
+    "offense_code": "MV194B",
+    "description": "Not wearing seat belt — driver or front passenger",
+    "state_code": "*",
+    "vehicle_class": "LMV",
+    "base_fine": 1000,
+    "compounding_fine": 0,
+    "demerit_points": 1,
+    "source_clause": "Section 194B, Motor Vehicles Act 1988 (inserted by MVA 2019)",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 194B"
+  },
+  {
+    "offense_code": "MV194C",
+    "description": "Towing another vehicle in contravention of rules",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 500,
+    "compounding_fine": 0,
+    "demerit_points": 0,
+    "source_clause": "Section 194C, Motor Vehicles Act 1988 as amended by MVA 2019",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 194C"
+  },
+  {
+    "offense_code": "MV194D",
+    "description": "Not wearing a helmet — two-wheeler rider or pillion passenger",
+    "state_code": "*",
+    "vehicle_class": "TWO_WHEELER",
+    "base_fine": 1000,
+    "compounding_fine": 0,
+    "demerit_points": 1,
+    "source_clause": "Section 194D, Motor Vehicles Act 1988 (inserted by MVA 2019)",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 194D",
+    "notes": "Licence disqualification for 3 months also applicable."
+  },
+  {
+    "offense_code": "MV194E",
+    "description": "Driving while using a handheld mobile phone or electronic device",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 5000,
+    "compounding_fine": 0,
+    "demerit_points": 2,
+    "source_clause": "Section 194E, Motor Vehicles Act 1988 (inserted by MVA 2019)",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 194E"
+  },
+  {
+    "offense_code": "MV194F",
+    "description": "Jumping red light / violation of traffic signal",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 1000,
+    "compounding_fine": 2000,
+    "demerit_points": 2,
+    "source_clause": "Section 194F, Motor Vehicles Act 1988 (inserted by MVA 2019)",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 194F"
+  },
+  {
+    "offense_code": "MV196",
+    "description": "Failure to report accident to police — driver involved in accident fails to report",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 5000,
+    "compounding_fine": 0,
+    "demerit_points": 3,
+    "source_clause": "Section 196, Motor Vehicles Act 1988 as amended by MVA 2019",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 196"
+  },
+  {
+    "offense_code": "MV197",
+    "description": "Abetment of offences under the Motor Vehicles Act",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 10000,
+    "compounding_fine": 0,
+    "demerit_points": 0,
+    "source_clause": "Section 197, Motor Vehicles Act 1988 as amended by MVA 2019",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 197"
+  },
+  {
+    "offense_code": "MV199A",
+    "description": "Offences by juveniles — guardian/owner allows juvenile to drive",
+    "state_code": "*",
+    "vehicle_class": "*",
+    "base_fine": 25000,
+    "compounding_fine": 0,
+    "demerit_points": 0,
+    "source_clause": "Section 199A, Motor Vehicles Act 1988 (inserted by MVA 2019)",
+    "effective_date": "2019-09-01",
+    "section_reference": "Section 199A",
+    "notes": "Juvenile tried under JJ Act. Vehicle registration cancelled. Guardian liable."
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "morth-main",
+    "name": "Ministry of Road Transport and Highways",
+    "organization": "MoRTH",
+    "url": "https://morth.nic.in",
+    "format": "HTML, PDF",
+    "updateFrequency": "Irregular",
+    "reliability": "very_high",
+    "coverage": "National road transport laws, acts, notifications, model rules",
+    "keyFields": ["act text", "rule clauses", "amendment dates", "notification ids"],
+    "integrationDifficulty": "medium",
+    "expectedImpact": "Primary legal authority"
+  },
+  {
+    "id": "egazette",
+    "name": "eGazette of India",
+    "organization": "Department of Publication",
+    "url": "https://egazette.nic.in",
+    "format": "PDF",
+    "updateFrequency": "Daily",
+    "reliability": "very_high",
+    "coverage": "Official notifications and amendments",
+    "keyFields": ["gazette number", "effective date", "notification text"],
+    "integrationDifficulty": "medium",
+    "expectedImpact": "Authoritative legal verification"
+  },
+  {
+    "id": "data-gov-in",
+    "name": "data.gov.in Road and Traffic Datasets",
+    "organization": "Government of India",
+    "url": "https://data.gov.in",
+    "format": "CSV, JSON, API",
+    "updateFrequency": "Varies by dataset",
+    "reliability": "high",
+    "coverage": "Road accidents, vehicle registration, district stats",
+    "keyFields": ["year", "state", "district", "accidents", "fatalities"],
+    "integrationDifficulty": "low",
+    "expectedImpact": "Risk analytics and dashboards"
+  },
+  {
+    "id": "ncrb",
+    "name": "NCRB Road Accident Reports",
+    "organization": "National Crime Records Bureau",
+    "url": "https://ncrb.gov.in",
+    "format": "PDF",
+    "updateFrequency": "Annual",
+    "reliability": "very_high",
+    "coverage": "State and district level road accident statistics",
+    "keyFields": ["state", "district", "accident count", "fatalities"],
+    "integrationDifficulty": "medium",
+    "expectedImpact": "Risk map and safety insights"
+  },
+  {
+    "id": "parivahan",
+    "name": "Parivahan",
+    "organization": "MoRTH / NIC",
+    "url": "https://parivahan.gov.in",
+    "format": "HTML, service endpoints",
+    "updateFrequency": "Frequent",
+    "reliability": "high",
+    "coverage": "Vehicle services and legal references",
+    "keyFields": ["service names", "vehicle class", "registration references"],
+    "integrationDifficulty": "low",
+    "expectedImpact": "Vehicle class and service cross-checks"
+  }
+]

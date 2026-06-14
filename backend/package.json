@@ -1,0 +1,50 @@
+{
+  "name": "drivelegal-backend",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "test": "vitest run",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "seed:sources": "tsx src/scripts/seed-official-sources.ts",
+    "ingest:document": "tsx src/scripts/ingest-document.ts",
+    "ingest:official-corpus": "tsx src/scripts/ingest-official-corpus.ts",
+    "download:official-corpus": "tsx src/scripts/download-official-corpus.ts",
+    "db:migrate": "tsx src/scripts/db-migrate.ts",
+    "validate:corpus": "tsx src/scripts/validate-corpus.ts",
+    "extract:rules": "tsx src/scripts/extract-rules.ts",
+    "download:boundaries": "tsx src/scripts/download-boundaries.ts",
+    "load:jurisdictions": "tsx src/scripts/load-jurisdictions.ts",
+    "evaluate:vision": "tsx src/scripts/evaluate-vision.ts"
+  },
+  "dependencies": {
+    "@xenova/transformers": "^2.17.2",
+    "canvas": "^3.2.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "jimp": "^1.6.1",
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^6.0.227",
+    "pdfkit": "^0.15.0",
+    "pg": "^8.12.0",
+    "qrcode": "^1.5.4",
+    "tesseract.js": "^7.0.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.5",
+    "@types/pdf-parse": "^1.1.4",
+    "@types/pdfkit": "^0.13.6",
+    "@types/pg": "^8.11.10",
+    "@types/qrcode": "^1.5.5",
+    "supertest": "^7.1.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

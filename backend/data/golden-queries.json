@@ -1,0 +1,92 @@
+/**
+ * golden-queries.json
+ *
+ * Golden Query Definitions for RAG Retrieval Validation (Phase 5).
+ *
+ * These represent the expected real-world user queries for the DriveLegal system.
+ * The retrieval validation suite will run these queries through the embedding/FAISS
+ * pipeline and verify that the expected `source_clause` or `offense_code` is returned
+ * within the top-K results.
+ */
+[
+  {
+    "id": "q1",
+    "query": "What is the fine for driving without a helmet?",
+    "expected_offense_code": "MV194D",
+    "expected_source_clause": "Section 194D",
+    "difficulty": "easy",
+    "intent": "fine_lookup"
+  },
+  {
+    "id": "q2",
+    "query": "How much do I have to pay if I jump a red light?",
+    "expected_offense_code": "MV194F",
+    "expected_source_clause": "Section 194F",
+    "difficulty": "easy",
+    "intent": "fine_lookup"
+  },
+  {
+    "id": "q3",
+    "query": "Is there a penalty for not wearing a seatbelt?",
+    "expected_offense_code": "MV194B",
+    "expected_source_clause": "Section 194B",
+    "difficulty": "easy",
+    "intent": "fine_lookup"
+  },
+  {
+    "id": "q4",
+    "query": "What happens if I drive under the influence of alcohol for the first time?",
+    "expected_offense_code": "MV185",
+    "expected_source_clause": "Section 185",
+    "difficulty": "medium",
+    "intent": "fine_lookup_with_condition"
+  },
+  {
+    "id": "q5",
+    "query": "I got caught drunk driving again within two years. What's the fine?",
+    "expected_offense_code": "MV185_R",
+    "expected_source_clause": "Section 185",
+    "difficulty": "medium",
+    "intent": "fine_lookup_with_condition"
+  },
+  {
+    "id": "q6",
+    "query": "Fine for a teenager driving a car",
+    "expected_offense_code": "MV199A",
+    "expected_source_clause": "Section 199A",
+    "difficulty": "medium",
+    "intent": "semantic_match"
+  },
+  {
+    "id": "q7",
+    "query": "Can I be fined for using my phone while driving?",
+    "expected_offense_code": "MV194E",
+    "expected_source_clause": "Section 194E",
+    "difficulty": "easy",
+    "intent": "fine_lookup"
+  },
+  {
+    "id": "q8",
+    "query": "What is the penalty if my truck is overloaded by 3 tonnes?",
+    "expected_offense_code": "MV193",
+    "expected_source_clause": "Section 194",
+    "difficulty": "hard",
+    "intent": "calculation_required"
+  },
+  {
+    "id": "q9",
+    "query": "I blocked an ambulance, how much is the fine?",
+    "expected_offense_code": "MV194E",
+    "expected_source_clause": "Section 194E",
+    "difficulty": "hard",
+    "intent": "semantic_match"
+  },
+  {
+    "id": "q10",
+    "query": "Driving with an expired license fine",
+    "expected_offense_code": "MV181",
+    "expected_source_clause": "Section 181",
+    "difficulty": "easy",
+    "intent": "fine_lookup"
+  }
+]
