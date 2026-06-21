@@ -12,7 +12,7 @@
  *   Reliability:    HIGH — derived from Census of India boundaries
  *   License:        Free for non-commercial research/educational use
  *   Why used:       Census of India shapefiles require registration;
- *                   GADM provides equivalent coverage for hackathon use.
+ *                   GADM provides equivalent coverage for research use.
  *
  * Usage:
  *   npm --workspace backend run download:boundaries
@@ -43,7 +43,7 @@ const SOURCES = [
 async function downloadFile(url: string, outputPath: string): Promise<{ sizeBytes: number; features: number }> {
   console.log(`Downloading: ${url}`);
   const response = await fetch(url, {
-    headers: { 'User-Agent': 'DriveLegal/1.0 (drivelegal-hackathon; educational-use)' },
+    headers: { 'User-Agent': 'DriveLegal/1.0 (drivelegal-research; educational-use)' },
   });
 
   if (!response.ok) {

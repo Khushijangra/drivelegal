@@ -71,7 +71,7 @@ const demoFiles = [
   '../../demo-script.md',
   '../../architecture-diagram.md',
   '../../SYSTEM_OVERVIEW.md',
-  '../../HACKATHON_README.md',
+  '../../README.md',
   '../../JUDGE_SCENARIOS.md',
   '../../FINAL_MVP_REPORT.md'
 ];

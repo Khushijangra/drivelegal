@@ -1,7 +1,7 @@
 # DriveLegal — Project Roadmap
 
 **Last updated:** June 2024  
-**Current version:** v1.0.0 (The Arch : RAG and Agentic AI Hackathon Release)
+**Current version:** v1.0.0 (The Arch : RAG and Agentic AI Release Release)
 
 ---
 
@@ -31,20 +31,16 @@ gantt
     Cross-encoder Re-ranking      :2025-02, 2025-03
     Chunking Strategy Improvement :2025-01, 2025-02
 
-    section Post-Hackathon — Data Pipeline
-    Cloud OCR for Scanned PDFs    :2025-03, 2025-04
-    Gazette Auto-Ingestion        :2025-04, 2025-05
-    All 28 States Coverage        :2025-03, 2025-06
-
-    section Post-Hackathon — Product
-    Hindi Language Support        :2025-06, 2025-08
-    Mobile App (React Native)     :2025-07, 2025-09
-    UPI Payment in Challan PDF    :2025-08, 2025-09
-
-    section Post-Hackathon — Intelligence
-    Legal Domain Fine-tuning      :2025-10, 2026-01
-    Multi-hop Reasoning           :2025-11, 2026-02
-    Rule Conflict Detection       :2026-01, 2026-03
+    section Post-Release — Data Pipeline
+      Implement distributed vector index: active, 2025-04-01, 30d
+      Automate source parsing: active, 2025-05-01, 30d
+      Multi-modal OCR for non-standard PDFs: active, 2025-06-01, 30d
+    section Post-Release — Product
+      Add citizen portal UI: active, 2025-07-01, 45d
+      Add official admin dashboard: active, 2025-08-15, 45d
+    section Post-Release — Intelligence
+      Real-time compliance monitoring: active, 2025-10-01, 60d
+      Predictive legal penalty modeling: active, 2025-12-01, 60d
 ```
 
 ---
@@ -125,7 +121,7 @@ gantt
 
 ---
 
-## Post-Hackathon — Data Pipeline 🔄 Planned (Q2 2025)
+## Post-Release — Data Pipeline 🔄 Planned (Q2 2025)
 
 ### Cloud OCR
 - [ ] AWS Textract integration for scanned government PDFs
@@ -145,7 +141,7 @@ gantt
 
 ---
 
-## Post-Hackathon — Product 🔄 Planned (Q3 2025)
+## Post-Release — Product 🔄 Planned (Q3 2025)
 
 ### Hindi Language Support
 - [ ] Hindi query translation using IndicTrans2
@@ -172,7 +168,7 @@ gantt
 
 ---
 
-## Post-Hackathon — Intelligence 🔄 Planned (Q4 2025–Q1 2026)
+## Post-Release — Intelligence 🔄 Planned (Q4 2025–Q1 2026)
 
 ### Legal Domain Fine-tuning
 - [ ] Collect annotated QA pairs from Indian traffic law

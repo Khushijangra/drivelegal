@@ -89,6 +89,22 @@ DriveLegal's **Advanced RAG** pipeline is optimized for absolute contextual fide
 
 ---
 
+## 🔄 Stress-Tested Agentic Workflow
+
+DriveLegal was designed to preserve contextual fidelity across multi-step legal reasoning tasks.
+
+The system combines:
+- **Query Understanding**
+- **Hybrid Retrieval**
+- **Context Ranking**
+- **Evidence Grounding**
+- **Compliance Assessment**
+- **Explainable Response Generation**
+
+to reduce hallucinations and improve legal traceability.
+
+---
+
 ## 📊 Evaluation
 
 | Metric | Result |
@@ -116,9 +132,9 @@ DriveLegal's **Advanced RAG** pipeline is optimized for absolute contextual fide
 
 ## 🎬 Live Demonstration
 
-![Demo](docs/demo.gif)
+<!-- ![Demo](docs/demo.gif) -->
 
-> *First impression of the DriveLegal multi-agent workflow solving a real-world legal query.*
+> *First impression of the DriveLegal multi-agent workflow solving a real-world legal query. (Demo recording pending final release)*
 
 ---
 
