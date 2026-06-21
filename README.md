@@ -117,6 +117,20 @@ to reduce hallucinations and improve legal traceability.
 
 ---
 
+## 🛡️ Agent Evaluation & Reliability
+
+To maintain contextual fidelity and reduce hallucinations, DriveLegal employs:
+
+- **Evidence Grounding**
+- **Citation-Aware Retrieval**
+- **Context Re-ranking**
+- **Deterministic Compliance Checks**
+- **Multi-Step Agent Validation**
+
+This rigorous validation layer ensures that every generated output is mathematically and legally traceable back to the source text.
+
+---
+
 ## 📸 Platform Preview
 
 ### Query Interface
