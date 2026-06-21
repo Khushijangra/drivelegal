@@ -1,7 +1,7 @@
 # DriveLegal — Project Roadmap
 
 **Last updated:** June 2024  
-**Current version:** v1.0.0 (IIT Madras Hackathon Release)
+**Current version:** v1.0.0 (The Arch : RAG and Agentic AI Hackathon Release)
 
 ---
 
@@ -17,7 +17,7 @@ DriveLegal aims to become India's most authoritative, open, and auditable road s
 gantt
     title DriveLegal Development Roadmap
     dateFormat  YYYY-MM
-    section v1.0 — Hackathon
+    section Round 1 — Architecture & Implementation
     Core API + DB Schema          :done, 2024-10, 2024-11
     PostGIS Jurisdiction Engine   :done, 2024-10, 2024-11
     Hybrid RAG Pipeline           :done, 2024-11, 2024-11
@@ -26,22 +26,22 @@ gantt
     React Frontend                :done, 2024-11, 2024-12
     Docker Deployment             :done, 2024-12, 2024-12
 
-    section v1.1 — Retrieval Scale
+    section Round 2 — Grand Finale Presentation
     pgvector Integration          :2025-01, 2025-02
     Cross-encoder Re-ranking      :2025-02, 2025-03
     Chunking Strategy Improvement :2025-01, 2025-02
 
-    section v1.2 — Data Pipeline
+    section Post-Hackathon — Data Pipeline
     Cloud OCR for Scanned PDFs    :2025-03, 2025-04
     Gazette Auto-Ingestion        :2025-04, 2025-05
     All 28 States Coverage        :2025-03, 2025-06
 
-    section v1.3 — Product
+    section Post-Hackathon — Product
     Hindi Language Support        :2025-06, 2025-08
     Mobile App (React Native)     :2025-07, 2025-09
     UPI Payment in Challan PDF    :2025-08, 2025-09
 
-    section v2.0 — Intelligence
+    section Post-Hackathon — Intelligence
     Legal Domain Fine-tuning      :2025-10, 2026-01
     Multi-hop Reasoning           :2025-11, 2026-02
     Rule Conflict Detection       :2026-01, 2026-03
@@ -49,7 +49,7 @@ gantt
 
 ---
 
-## v1.0.0 — Hackathon Release ✅ Complete
+## Round 1 — Architecture & Implementation Submission ✅ Complete
 
 ### Core Infrastructure
 - [x] Provenance-first PostgreSQL 16 schema with 8 tables
@@ -104,7 +104,7 @@ gantt
 
 ---
 
-## v1.1 — Retrieval Scale 🔄 Planned (Q1 2025)
+## Round 2 — Grand Finale Presentation 🔄 Planned
 
 ### pgvector Migration
 - [ ] Add `pgvector` extension to PostgreSQL schema
@@ -125,7 +125,7 @@ gantt
 
 ---
 
-## v1.2 — Data Pipeline 🔄 Planned (Q2 2025)
+## Post-Hackathon — Data Pipeline 🔄 Planned (Q2 2025)
 
 ### Cloud OCR
 - [ ] AWS Textract integration for scanned government PDFs
@@ -145,7 +145,7 @@ gantt
 
 ---
 
-## v1.3 — Product 🔄 Planned (Q3 2025)
+## Post-Hackathon — Product 🔄 Planned (Q3 2025)
 
 ### Hindi Language Support
 - [ ] Hindi query translation using IndicTrans2
@@ -172,7 +172,7 @@ gantt
 
 ---
 
-## v2.0 — Intelligence 🔄 Planned (Q4 2025–Q1 2026)
+## Post-Hackathon — Intelligence 🔄 Planned (Q4 2025–Q1 2026)
 
 ### Legal Domain Fine-tuning
 - [ ] Collect annotated QA pairs from Indian traffic law

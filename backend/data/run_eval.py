@@ -40,6 +40,6 @@ for cat in categories:
 print("\n--- FINAL RAW OUTPUTS ---")
 print(json.dumps(results, indent=2))
 
-with open(r'c:\Users\Asus\OneDrive\Desktop\IIT MADRAS\backend\data\evaluation_results.json', 'w') as f:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'evaluation_results.json'), 'w') as f:
     json.dump(results, f, indent=2)
 

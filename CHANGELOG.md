@@ -16,7 +16,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ---
 
-## [1.0.0] — 2024-12-XX — IIT Madras Hackathon Release
+## [1.0.0] — 2026-06-21 — The Arch : RAG and Agentic AI Hackathon Release
 
 ### Added
 

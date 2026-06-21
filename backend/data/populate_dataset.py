@@ -28,7 +28,7 @@ categories = {
     "pothole": "road pothole asphalt"
 }
 
-base_dir = r"c:\Users\Asus\OneDrive\Desktop\IIT MADRAS\backend\data\benchmark"
+base_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "benchmark")
 os.makedirs(base_dir, exist_ok=True)
 
 manifest = []
