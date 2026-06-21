@@ -1,5 +1,5 @@
-import { retrieveEvidence, synthesizeAnswer } from '../services/rag';
-import { getPool, closePool } from '../db';
+import { retrieveEvidence, synthesizeAnswer } from '../rag/rag';
+import { getPool, closePool } from '../database/db';
 import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
 

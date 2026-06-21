@@ -22,10 +22,10 @@ let out = '# PHASE 10 VERIFICATION AUDIT\\n\\n';
 
 // A. VECTOR SEARCH
 out += '## A. VECTOR SEARCH\\n\\n';
-const vs = getFileInfo(path.join(__dirname, '../services/vector-store.ts'));
+const vs = getFileInfo(path.join(__dirname, '../rag/vector-store.ts'));
 out += `**backend/src/services/vector-store.ts**\\nExists: ${vs.exists}\\nLines: ${vs.lineCount}\\n\\n`;
 out += `**searchSimilar() / cosineSimilarity() implementation:**\\n\`\`\`typescript\\n`;
-const vsLines = fs.readFileSync(path.join(__dirname, '../services/vector-store.ts'), 'utf-8').split('\\n');
+const vsLines = fs.readFileSync(path.join(__dirname, '../rag/vector-store.ts'), 'utf-8').split('\\n');
 out += vsLines.filter((l: string, i: number) => i > 57 && i < 115).join('\\n') + '\\n\`\`\`\\n\\n';
 
 const vIdx = getFileInfo(path.join(__dirname, '../data/vector.index.json'));
@@ -36,10 +36,10 @@ out += `**backend/data/rules.vector.index.json**\\nSize: ${rIdx.size} bytes\\n\\
 
 // B. RAG
 out += '## B. RAG\\n\\n';
-const rag = getFileInfo(path.join(__dirname, '../services/rag.ts'));
+const rag = getFileInfo(path.join(__dirname, '../rag/rag.ts'));
 out += `**backend/src/services/rag.ts**\\nExists: ${rag.exists}\\nLines: ${rag.lineCount}\\n\\n`;
 out += `**Retrieval Flow / RRF / Authority Logic (Excerpt):**\\n\`\`\`typescript\\n`;
-const ragLines = fs.readFileSync(path.join(__dirname, '../services/rag.ts'), 'utf-8').split('\\n');
+const ragLines = fs.readFileSync(path.join(__dirname, '../rag/rag.ts'), 'utf-8').split('\\n');
 out += ragLines.slice(100, 310).join('\\n') + '\\n\`\`\`\\n\\n';
 
 // SYNONYMS

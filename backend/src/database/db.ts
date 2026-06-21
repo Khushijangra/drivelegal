@@ -1,5 +1,5 @@
 import { Pool, PoolClient, QueryResultRow } from 'pg';
-import { config } from './config';
+import { config } from '../config';
 
 let pool: Pool | null = null;
 

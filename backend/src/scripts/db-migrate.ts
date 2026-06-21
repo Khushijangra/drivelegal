@@ -9,7 +9,7 @@
  */
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { getPool, closePool } from '../db';
+import { getPool, closePool } from '../database/db';
 
 async function main(): Promise<void> {
   const sqlPath = path.resolve(__dirname, '../../sql/001_init.sql');

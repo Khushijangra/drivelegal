@@ -10,7 +10,7 @@
  */
 
 import * as path from 'node:path';
-import { evaluateVisionDataset } from '../services/vision';
+import { evaluateVisionDataset } from '../agents/vision';
 
 const BENCHMARK_CATEGORIES = [
   'helmet_present',

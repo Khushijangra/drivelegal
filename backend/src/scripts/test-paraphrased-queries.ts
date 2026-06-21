@@ -1,4 +1,4 @@
-import { retrieveEvidence } from '../services/rag';
+import { retrieveEvidence } from '../rag/rag';
 
 const testCases = [
   { query: "helmet challan amount", expectedRule: "MV194D" },

@@ -1,6 +1,6 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
-import { analyzeRoadImage, initVisionModels } from '../services/vision';
+import { analyzeRoadImage, initVisionModels } from '../agents/vision';
 
 const TEST_IMAGES = [
   { name: 'helmet_present', url: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=500&q=80' },

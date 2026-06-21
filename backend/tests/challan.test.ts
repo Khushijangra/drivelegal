@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { calculateChallan } from "../src/services/challan";
+import { calculateChallan } from "../src/agents/challan";
 import type { RuleRecord } from "../src/types";
 
 const sourceReference: RuleRecord["sourceReference"] = {

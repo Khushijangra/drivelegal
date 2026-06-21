@@ -27,7 +27,7 @@
 import path from 'node:path';
 import fs from 'node:fs/promises';
 import { randomUUID } from 'node:crypto';
-import { query, withTransaction, closePool } from '../db';
+import { query, withTransaction, closePool } from '../database/db';
 
 interface GadmFeature {
   type: 'Feature';

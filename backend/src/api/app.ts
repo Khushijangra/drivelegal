@@ -2,15 +2,15 @@ import cors from 'cors';
 import express, { Request, Response } from 'express';
 import { randomUUID } from 'node:crypto';
 import { z } from 'zod';
-import { config } from './config';
-import { query, withTransaction } from './db';
-import { calculateChallan } from './services/challan';
-import { generateChallanPdf } from './services/challan-pdf';
-import { buildEvidenceBundle } from './services/evidence';
-import { ingestPdfDocument, ingestTextDocument } from './services/ingest';
-import { resolveJurisdictionChain, sortJurisdictionChain } from './services/jurisdiction';
-import { synthesizeAnswer, retrieveEvidence } from './services/rag';
-import { ChallanRequest, RuleRecord } from './types';
+import { config } from '../config';
+import { query, withTransaction } from '../database/db';
+import { calculateChallan } from '../agents/challan';
+import { generateChallanPdf } from '../services/challan-pdf';
+import { buildEvidenceBundle } from '../agents/evidence';
+import { ingestPdfDocument, ingestTextDocument } from '../services/ingest';
+import { resolveJurisdictionChain, sortJurisdictionChain } from '../services/jurisdiction';
+import { synthesizeAnswer, retrieveEvidence } from '../rag/rag';
+import { ChallanRequest, RuleRecord } from '../types';
 
 export function createApp() {
   const app = express();
@@ -400,7 +400,7 @@ export function createApp() {
       lookupCodes.push('DL');
     }
 
-    const { synonymMap } = await import('./services/synonyms');
+    const { synonymMap } = await import('../rag/synonyms');
     const q = parsed.data.q.toLowerCase().trim();
     const searchTerms: string[] = [q];
     
@@ -501,7 +501,7 @@ export function createApp() {
     }
 
     try {
-      const { analyzeRoadImage } = await import('./services/vision');
+      const { analyzeRoadImage } = await import('../agents/vision');
       const result = await analyzeRoadImage(parsed.data.image, parsed.data.fileName);
       return res.json(result);
     } catch (error: any) {
@@ -511,7 +511,7 @@ export function createApp() {
 
   app.get('/api/vision/health', async (req: Request, res: Response) => {
     try {
-      const { getVisionHealth } = await import('./services/vision');
+      const { getVisionHealth } = await import('../agents/vision');
       return res.json(getVisionHealth());
     } catch (e: any) {
       return res.status(500).json({ error: e.message });
@@ -542,7 +542,7 @@ export function createApp() {
 
   app.post('/api/vision/evaluate', async (req: Request, res: Response) => {
     try {
-      const { evaluateVisionDataset } = await import('./services/vision');
+      const { evaluateVisionDataset } = await import('../agents/vision');
       const { datasetCategory } = req.body;
       if (!datasetCategory) {
          return res.status(400).json({ error: 'datasetCategory is required' });
@@ -555,7 +555,7 @@ export function createApp() {
   });
 
   // Warm-up the vision models in the background
-  import('./services/vision').then(({ initVisionModels }) => {
+  import('../agents/vision').then(({ initVisionModels }) => {
     initVisionModels().catch(err => console.error('[vision] Warm-up failed:', err));
   });
 

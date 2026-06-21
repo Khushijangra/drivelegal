@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { randomUUID } from "node:crypto";
-import { query } from "../db";
+import { query, withTransaction } from "../database/db";
 import { extractPdfWithOcrFallback } from "./ocr";
 
 export interface IngestInput {

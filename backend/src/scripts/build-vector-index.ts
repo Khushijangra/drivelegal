@@ -1,5 +1,5 @@
-import { getPool, closePool } from '../db';
-import { generateEmbedding, saveIndex, VectorEntry } from '../services/vector-store';
+import { getPool, closePool } from '../database/db';
+import { generateEmbedding, saveIndex, VectorEntry } from '../rag/vector-store';
 
 async function main() {
   const pool = getPool();

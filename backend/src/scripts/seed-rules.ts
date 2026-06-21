@@ -1,7 +1,7 @@
 import path from 'node:path';
 import fs from 'node:fs/promises';
 import { randomUUID } from 'node:crypto';
-import { withTransaction, closePool } from '../db';
+import { withTransaction, closePool } from '../database/db';
 
 async function main() {
   const rulesPath = path.resolve(__dirname, '../../data/mv-act-2019-rules.json');

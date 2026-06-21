@@ -1,5 +1,5 @@
-import { query } from '../db';
-import { generateEmbedding, saveRuleIndex, RuleVectorEntry } from '../services/vector-store';
+import { query } from '../database/db';
+import { generateEmbedding, saveRuleIndex, RuleVectorEntry } from '../rag/vector-store';
 
 async function generateRuleEmbeddings() {
   console.log('Fetching rules from database...');

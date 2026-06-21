@@ -1,6 +1,6 @@
-import { createApp } from './app';
+import { createApp } from './api/app';
 import { config } from './config';
-import { closePool } from './db';
+import { closePool } from './database/db';
 
 async function main() {
   const app = createApp();

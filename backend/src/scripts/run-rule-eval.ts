@@ -1,4 +1,4 @@
-import { retrieveEvidence } from '../services/rag';
+import { retrieveEvidence } from '../rag/rag';
 
 const intents = [
   { expected: 'MV194D', bases: ['helmet', 'protective headgear', 'head protection', 'without wearing helmet', 'riding bareheaded', 'no helmet fine', 'challan for missing helmet', 'two wheeler head gear', 'forgetting to wear helmet', 'pillion without helmet'] },

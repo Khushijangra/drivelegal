@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { cosineSimilarity } from '../src/services/vector-store';
+import { cosineSimilarity } from '../src/rag/vector-store';
 
 describe('Vector Store & Retrieval', () => {
   it('calculates cosine similarity correctly', () => {

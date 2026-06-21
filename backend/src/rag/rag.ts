@@ -1,5 +1,6 @@
 import { EvidenceReference } from '../types';
 import { config } from '../config';
+import { query } from '../database/db';
 
 export interface MessageRecord {
   role: 'user' | 'assistant';
@@ -163,13 +164,13 @@ export async function retrieveEvidence(
   const blacklistRegex = /\b(pasta|spaghetti|pizza|recipe|cooking|cook|movie|movies|cinema|film|films|prime minister|president|election|elections|sql|select\s+.*\s+from|drop\s+table|delete\s+from|insert\s+into|union\s+select|alter\s+table|grant\s+all|system\s+role|ignore\s+previous|you\s+are\s+a\s+chatbot|jailbreak|dan\s+mode)\b/i;
   if (blacklistRegex.test(lowerQuery)) {
     console.log('[API_QUERY] [SERVICE_LAYER] Blacklist matched, bypassing retrieval.');
-    const { buildEvidenceBundle } = await import('./evidence');
+    const { buildEvidenceBundle } = await import('../agents/evidence');
     return buildEvidenceBundle(question, jurisdictionChain, []);
   }
 
   const { generateEmbedding, searchSimilar, searchSimilarRules } = await import('./vector-store');
-  const { query } = await import('../db');
-  const { buildEvidenceBundle } = await import('./evidence');
+  const { query } = await import('../database/db');
+  const { buildEvidenceBundle } = await import('../agents/evidence');
   const { expandSynonyms, synonymMap } = await import('./synonyms');
 
   const expandedQuery = expandSynonyms(question);

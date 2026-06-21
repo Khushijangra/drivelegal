@@ -1,4 +1,4 @@
-import { retrieveEvidence } from '../services/rag';
+import { retrieveEvidence } from '../rag/rag';
 
 const realistic = [
   { q: "no helmet fine Delhi", ex: "DL-113" },

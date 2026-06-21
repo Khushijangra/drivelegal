@@ -1,6 +1,6 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import { query } from "../db";
+import { query } from "../database/db";
 import type { OfficialSource } from "../types";
 
 const dataPath = path.resolve(__dirname, "../../data/official_sources.json");
